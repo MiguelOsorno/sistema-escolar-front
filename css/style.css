@@ -10,16 +10,19 @@ header{
     background-color:#74B460;
    
 }
-img{
+.header_logo{
+    text-align: center;
+}
+.header_image{
     max-width: 100%;
 }
-.titulo{
+.header_title{
     padding-top: 35px;
     text-align: center;
     font-size: 150%;
     color: white;
 }
-.lista{
+.list{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -28,23 +31,23 @@ img{
     padding: 0;
     
 }
-.lista_link{
+.list_element{
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.list_link{
     text-decoration: none;
     color:black;
     padding: 1rem 2rem;
     display:inline-block;
 }
-.lista_link--bg-color-black{
+.list_link--bg-color-black{
     background-color: black;
 }
-.lista_link--color-white{
+.list_link--color-white{
     color:white;
-}
-.lista_elemento{
-    padding: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    text-align: center;
 }
 @media (max-width:576px)
 {
@@ -52,8 +55,9 @@ img{
         flex-direction: column;
     }
 
-    .lista{
+    .list{
         flex-direction: column;
     }
 }
+
 
